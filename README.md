@@ -1,5 +1,5 @@
 # docker-engine-portainer-ce
-installing docker engine and portainer ce
+installing docker engine and portainer ce for Debian OS
 
 run with the following command
 
