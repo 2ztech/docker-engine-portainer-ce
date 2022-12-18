@@ -1,6 +1,16 @@
-# docker-engine-portainer-ce
-installing docker engine and portainer ce for Debian OS
 
-run with the following command
+# Docker Engine + Portainer CE Install Script
 
-curl -sL https://raw.githubusercontent.com/lorimaju/docker-engine-portainer-ce/main/install.sh | bash
+This is script to install Docker Engine and Portainer Community Edition
+
+## Installation
+
+Run the following command for automated installation for Debian.
+```bash
+  curl -sL https://raw.githubusercontent.com/lorimaju/docker-engine-portainer-ce/main/deb_install.sh | bash
+```
+
+Run the following command for automated installation for Ubuntu.
+```bash
+curl -sL https://raw.githubusercontent.com/lorimaju/docker-engine-portainer-ce/main/ubuntu_install.sh | bash
+```
