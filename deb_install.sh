@@ -1,11 +1,7 @@
 #!/bin/bash
 
 sudo apt-get update
-sudo apt-get install \
-    ca-certificates \
-    curl \
-    gnupg \
-    lsb-release
+sudo apt-get install ca-certificates curl gnupg lsb-release -y
 
 #add gpg key    
 sudo mkdir -p /etc/apt/keyrings
@@ -30,3 +26,5 @@ echo \
   
   #test installation
   sudo docker run hello-world
+  
+  echo "Installation is done. You can access your Portainer by https://ipaddress:9443"
