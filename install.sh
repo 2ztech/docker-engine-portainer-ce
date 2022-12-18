@@ -22,5 +22,11 @@ echo \
   #Install Docker Engine, containerd, and Docker Compose
   sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin -y
   
+  #portainer volume create
+  docker volume create portainer_data
+  
+  #portainer ce install
+  docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest
+  
   #test installation
   sudo docker run hello-world
