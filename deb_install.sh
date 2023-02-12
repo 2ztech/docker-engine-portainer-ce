@@ -27,4 +27,8 @@ echo \
   #test installation
   sudo docker run hello-world
   
-  echo "Installation is done. You can access your Portainer by https://ipaddress:9443"
+  #message
+  ip=$(hostname -I | awk '{print $1}')
+  port="9443"
+
+  printf "You can access Portainer at https://%s:%s\n" "$ip" "$port"
